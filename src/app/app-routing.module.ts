@@ -12,8 +12,16 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+    path: 'bubble',
+    loadChildren: () => import('./bubble/bubble.module').then(m => m.BubblePageModule)
+  },
+  {
+    path: 'line',
+    loadChildren: () => import('./line/line.module').then(m => m.LinePageModule)
+  },
+  {
+    path: 'polar',
+    loadChildren: () => import('./polar/polar.module').then(m => m.PolarPageModule)
   }
 ];
 
